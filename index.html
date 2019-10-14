@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <title>Train</title>
+    <style>
+        .jumbotron {
+            background: url(./assets/images/tr.jpg)center center / cover no-repeat;
+        }
+    </style>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="font-family: 'Bree Serif', serif;">
         <div class="container text-center">
-            <h1 class="display-4">Anytime is Train Time</h1>
-            <p class="lead">Choo Choo. Chee Chee</p>
+            <h1 class="display-4 p-2 mx-auto rounded-lg" style="background: #fffffff0; max-width: 600px; width: 100%;">Anytime is Train Time</h1>
+            <p class="lead p-1 mx-auto rounded-lg" style="background: #fffffff0; max-width: 250px;">Choo Choo. Chee Chee</p>
         </div>
     </div>
-    <div class="card mx-auto bold" style="max-width: 1000px;">
-        <div class="card-header font-weight-bold pl-3">
+    <div class="card mx-auto bold border-secondary" style="max-width: 1000px;">
+        <div class="card-header font-weight-bold pl-3 bg-secondary text-light">
             Current Train Schedule
         </div>
         <table class="table">
@@ -53,8 +59,8 @@
             </tbody>
         </table>
     </div>
-    <div class="card mx-auto mt-5 bold" style="max-width: 1000px;">
-        <div class="card-header font-weight-bold pl-3">
+    <div class="card mx-auto mt-5 bold border-secondary" style="max-width: 1000px;">
+        <div class="card-header font-weight-bold pl-3 bg-secondary text-light">
             Add Train
         </div>
         <form>
@@ -74,7 +80,7 @@
                 <label for="frequency">Frequency (min)</label>
                 <input type="text" class="form-control" id="frequency" placeholder="Frequency">
             </div>
-            <button type="submit" class="btn btn-primary ml-3 mb-3">Submit</button>
+            <button type="submit" class="btn btn-secondary ml-3 mb-3">Submit</button>
         </form>
     </div>
 
