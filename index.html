@@ -17,7 +17,7 @@
     <div class="jumbotron jumbotron-fluid" style="font-family: 'Bree Serif', serif;">
         <div class="container text-center">
             <h1 class="display-4 p-2 mx-auto rounded-lg" style="background: #fffffff0; max-width: 600px; width: 100%;">Anytime is Train Time</h1>
-            <p class="lead p-1 mx-auto rounded-lg" style="background: #fffffff0; max-width: 250px;">Choo Choo. Chee Chee</p>
+            <p class="lead p-1 mx-auto rounded-lg" style="background: #fffffff0; max-width: 250px; width: 100%">Choo Choo. Chee Chee</p>
         </div>
     </div>
     <div class="card mx-auto bold border-secondary" style="max-width: 1000px;">
@@ -34,7 +34,7 @@
                     <th scope="col">Minutes Away</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="new-train">
                 <tr>
                     <td>Trenton Express</td>
                     <td>Trenton</td>
@@ -56,6 +56,7 @@
                     <td>05:53 PM</td>
                     <td>10</td>
                 </tr>
+                
             </tbody>
         </table>
     </div>
@@ -64,26 +65,34 @@
             Add Train
         </div>
         <form>
-            <div class="form-group ml-3 mt-2">
+            <div class="form-group mt-2 mx-3">
                 <label for="train-name">Train Name</label>
-                <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+                <input type="text" class="form-control" id="train-name" autocomplete="off" placeholder="Train Name">
             </div>
-            <div class="form-group ml-3">
-                <label for="destination">Destination</label>
-                <input type="text" class="form-control" id="destination" placeholder="Destination">
+            <div class="form-group mx-3">
+                <label for="traiin-destination">Destination</label>
+                <input type="text" class="form-control" id="train-destination" autocomplete="off" placeholder="Destination">
             </div>
-            <div class="form-group ml-3">
+            <div class="form-group mx-3">
                 <label for="train-time">First Train Time (HH:mm - military time)</label>
-                <input type="text" class="form-control" id="train-time" placeholder="Train  Time">
+                <input type="text" class="form-control" id="train-time" autocomplete="off" placeholder="Train Time">
                 </div>
-            <div class="form-group ml-3">
-                <label for="frequency">Frequency (min)</label>
-                <input type="text" class="form-control" id="frequency" placeholder="Frequency">
+            <div class="form-group mx-3">
+                <label for="traiin-frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="train-frequency" autocomplete="off" placeholder="Frequency">
             </div>
-            <button type="submit" class="btn btn-secondary ml-3 mb-3">Submit</button>
+            <button type="submit" class="btn btn-secondary ml-3 mb-3" id="add-train">Submit</button>
         </form>
     </div>
-
     
 </body>
+<!-- Firebase Core JavaScript Link -->
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+ <!-- Specific Firebase products we want (Database) -->
+ <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+ 
+ 
+
 </html>
