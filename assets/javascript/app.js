@@ -12,6 +12,7 @@ var config = {
 
   // add new train to database
   $("#add-train").on("click", function(event){
+    alert("Train successfully added")
     event.preventDefault();
     var trainName = $("#train-name").val();
     var trainDestination  = $("#train-destination").val();
